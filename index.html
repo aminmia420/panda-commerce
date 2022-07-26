@@ -7,12 +7,14 @@
   <title>Bootstrap Panda commerce</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="container">
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="">
@@ -28,13 +30,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Backpack</a>
+              <a class="nav-link" href="#backpack">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -45,7 +47,7 @@
       </div>
     </nav>
     <!-- slider start -->
-    <section class="mt-5 bg bg-info border rounded">
+    <section class="mt-5 bg panda-bg-color border-0 border rounded" id="#shoes">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active p-5 ">
@@ -56,7 +58,7 @@
                   <p>This is the best headphone in the world for people who just want to waste time in front of funky
                     world.</p>
                   <h1>$420</h1>
-                  <button class="btn btn-primary">Buy Now</button>
+                  <button class="btn panda-btn-buy-now">Buy Now</button>
                 </div>
               </div>
               <div class="col-lg-5">
@@ -72,7 +74,7 @@
                   <p>This is the best LCD TV in the world for people who just want to waste time in front of funky
                     world.</p>
                   <h1>$420</h1>
-                  <button class="btn btn-primary">Buy Now</button>
+                  <button class="btn panda-btn-buy-now">Buy Now</button>
                 </div>
               </div>
               <div class="col-lg-5">
@@ -88,7 +90,7 @@
                   <p>This is the best X-Box in the world for people who just want to waste time in front of funky
                     world.</p>
                   <h1>$420</h1>
-                  <button class="btn btn-primary">Buy Now</button>
+                  <button class="btn panda-btn-buy-now">Buy Now</button>
                 </div>
               </div>
               <div class="col-lg-5">
@@ -116,7 +118,7 @@
   <!-- single category -->
   <main>
     <div class="container text-center">
-      <div class="row g-4 my-5">
+      <div class="row g-4 my-5 categories">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <div class="p-3 border bg-warning rounded-3 d-flex align-items-center justify-content-around">
             <h1 class="text-white">Watch</h1>
@@ -138,9 +140,9 @@
       </div>
     </div>
     <!-- shoes category start -->
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
       <h1>Shoes</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
           <div class="card border border-0 shadow-lg h-100">
             <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
@@ -149,7 +151,7 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
               <h3>$120</h3>
-              <div class="btn btn-primary">Buy Now >></div>
+              <div class="btn panda-btn-buy-now">Buy Now >></div>
             </div>
           </div>
         </div>
@@ -161,7 +163,7 @@
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content show
                 that equal height action.</p>
               <h3>$320</h3>
-              <div class="btn btn-primary">Buy Now >></div>
+              <div class="btn panda-btn-buy-now">Buy Now >></div>
             </div>
           </div>
         </div>
@@ -173,16 +175,80 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                 content.</p>
               <h3>$350</h3>
-              <div class="btn btn-primary">Buy Now >></div>
+              <div class="btn panda-btn-buy-now">Buy Now >></div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- shoes category end -->
-  </main>
-  <!-- single end -->
 
+    <!-- Bag pack section -->
+    <section class="container my-5" id="backpack">
+      <h1>Backpack</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card border border-0 shadow-lg h-100">
+            <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Laltu Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <h3>$320</h3>
+              <div class="btn panda-btn-buy-now mt-5">Buy Now >></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-0 shadow-lg h-100">
+            <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blue Niltu Bag</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content show
+                that equal height action.</p>
+              <h3>$120</h3>
+              <div class="btn panda-btn-buy-now mt-5">Buy Now >></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-0 shadow-lg h-100">
+            <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Black Kaltu Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content.</p>
+              <h3>$250</h3>
+              <div class="btn panda-btn-buy-now mt-5">Buy Now >></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bag pack end -->
+    <!-- single end -->
+
+    <!-- Subscribe start -->
+    <section style="height:300px;" class="container panda-bg-color rounded-3 d-flex justify-content-center align-items-center mb-5" id="subscribe">
+      <div>
+        <h1>LET'S STAY IN TOUCH</h1>
+      <p class="fw-bold">Get updates on sales, specials and more</p>
+      <form>
+        <div class="mb-2">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn panda-btn-buy-now px-4">Submit</button>
+      </form>
+      </div>
+    </section>
+    <!-- Subscribe end -->
+  </main>
+
+  <!-- footer start -->
+  <footer class="text-center">
+    <p><small>©2022. Panda Commerce. All rights reserved. Amin Mia, Bangladesh.</small></p>
+  </footer>
+  <!-- footer end -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
